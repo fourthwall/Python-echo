@@ -66,7 +66,7 @@ def generate_response(event, name):
         "namespace": header['namespace'],
         "payloadVersion": "2"
     }
-    # if the respoonse contains a message, add it to the payload.
+    # if the response contains a message, add it to the payload.
     if "messageId" in header:
         ret['messageId'] = header['messageId']
     return ret
